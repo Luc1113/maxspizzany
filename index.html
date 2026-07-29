@@ -651,6 +651,66 @@
             letter-spacing: 2px;
         }
 
+        /* Fresh from the oven */
+        .oven-gallery {
+            padding: clamp(80px, 10vw, 130px) 0;
+            background: var(--cream);
+        }
+
+        .oven-gallery-header {
+            max-width: 760px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+
+        .oven-gallery-header .section-label {
+            justify-content: center;
+            color: var(--red);
+        }
+
+        .oven-gallery-header .section-label::before {
+            display: none;
+        }
+
+        .oven-gallery-header .section-title {
+            margin: 10px 0 18px;
+        }
+
+        .oven-gallery-header p {
+            color: #666;
+            font-size: 1.05rem;
+        }
+
+        .oven-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        .oven-gallery-grid figure {
+            margin: 0;
+            aspect-ratio: 3 / 4;
+            overflow: hidden;
+            background: var(--black);
+        }
+
+        .oven-gallery-grid img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .oven-gallery-grid figure:hover img {
+            transform: scale(1.05);
+        }
+
+        .oven-gallery-cta {
+            margin-top: 38px;
+            text-align: center;
+        }
+
         /* Location */
         .location {
             padding: 120px 0;
@@ -876,6 +936,10 @@
             }
 
             .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .oven-gallery-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
 
@@ -1272,6 +1336,34 @@
                     Order Now
                     <span>→</span>
                 </a>
+            </div>
+        </section>
+
+        <!-- Fresh From the Oven -->
+        <section class="oven-gallery" aria-labelledby="oven-gallery-title">
+            <div class="container">
+                <div class="oven-gallery-header fade-in">
+                    <span class="section-label">Fresh From the Oven</span>
+                    <h2 class="section-title" id="oven-gallery-title">Straight From the Counter at Max's</h2>
+                    <p>A few of the pies coming out of the oven every day. See something you like? The full menu has the whole lineup.</p>
+                </div>
+                <div class="oven-gallery-grid">
+                    <figure class="fade-in">
+                        <img src="assets/images/pizza-margherita.jpg" alt="Margherita pizza with fresh mozzarella, basil, and tomato sauce" loading="lazy">
+                    </figure>
+                    <figure class="fade-in">
+                        <img src="assets/images/pizza-chipotle-chicken.jpg" alt="Chipotle chicken pizza with fresh mozzarella, bacon, and scallions" loading="lazy">
+                    </figure>
+                    <figure class="fade-in">
+                        <img src="assets/images/pizza-bbq-chicken.jpg" alt="BBQ chicken pizza with melted mozzarella and fresh herbs" loading="lazy">
+                    </figure>
+                    <figure class="fade-in">
+                        <img src="assets/images/pizza-spinach-white.jpg" alt="White spinach pizza with creamy melted cheese on a golden crust" loading="lazy">
+                    </figure>
+                </div>
+                <div class="oven-gallery-cta fade-in">
+                    <a href="https://maxspizzany.com/order-now" class="btn btn-primary">See the Full Menu <span>→</span></a>
+                </div>
             </div>
         </section>
     </main>
