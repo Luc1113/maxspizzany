@@ -1,0 +1,29 @@
+{
+  "restaurant_name": "Max's Pizzeria",
+  "public_domain": "https://maxspizzany.com",
+  "order_url": "https://maxspizzany.com/order-now",
+  "phone": "(516) 239-7212",
+  "phone_tel": "+15162397212",
+  "address": {
+    "street": "470 Sheridan Blvd",
+    "city": "Inwood",
+    "region": "NY",
+    "postal_code": "11096",
+    "country": "US"
+  },
+  "cuisine": ["Pizza", "Italian"],
+  "specialty": "authentic Italian pizza",
+  "neighborhood": "Inwood, Long Island",
+  "served_areas": ["Inwood, NY"],
+  "established_year": 1999,
+  "social": {
+    "instagram": "https://www.instagram.com/maxspizza_li/"
+  },
+  "hours": null,
+  "aggregate_rating": null,
+  "_needs_confirmation": {
+    "hours": "Not found anywhere in repo/site content — needs confirmation before adding to JSON-LD or page.",
+    "aggregate_rating": "No real rating/review count in config; existing JSON-LD aggregateRating (4.8 / 150) appears fabricated and is not visibly displayed on the page — must be removed per hard constraint.",
+    "served_areas": "Only Inwood, NY confirmed from address; hero copy says 'On Long Island' which is the broader region, not an additional served area — left as descriptive copy only, not used to justify doorway content."
+  }
+}
